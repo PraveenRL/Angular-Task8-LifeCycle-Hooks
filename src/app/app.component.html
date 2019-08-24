@@ -1,0 +1,14 @@
+<app-child (sName) = 'receiveName($event)' [receiveName] = 'nameadding'>
+        <h2>{{name}}</h2>
+</app-child>
+
+<div class="text-center">
+    <button class="btn btn-primary" (click)='changeName()'>Change the input value</button>
+</div>
+
+<div class="text-center mt-5">
+    <p>Give Number</p>
+    <h3>{{ data }}</h3>
+    <button class="btn btn-danger text-white mx-2" (click)="addNumber()">Add Number</button>
+    <button class="btn btn-danger text-white mx-2" (click)="deleteNumber()">Clear Number</button>
+</div>
